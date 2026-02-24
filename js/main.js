@@ -1,5 +1,5 @@
 /* ==========================================================================
-   YOU ARE TRAVEL — Main JavaScript
+   DALEKO.TRAVEL — Main JavaScript
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {

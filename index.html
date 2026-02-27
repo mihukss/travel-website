@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -35,28 +36,92 @@
     <!-- Hero -->
     <section class="hero">
         <div class="hero__bg">
-            <video class="hero__video" autoplay muted loop playsinline>
-                <source src="video/hero.webm" type="video/webm">
-                <source src="video/hero.mp4" type="video/mp4">
-            </video>
+            <img src="img/back1.png" alt="Кейптаун" class="hero__image">
             <div class="hero__overlay"></div>
         </div>
-        <div class="container hero__content">
-            <!-- Header — top-left area -->
-            <h1 class="hero__title">Уникальные приключения по&nbsp;ЮАР и&nbsp;югу&nbsp;Африки</h1>
-            <!-- Subheader — bottom-right area -->
-            <div class="hero__bottom">
-                <p class="hero__subtitle">Показываем авторские маршруты, рождённые из&nbsp;пройденных километров, внимания к&nbsp;мелочам и&nbsp;большой любви к&nbsp;путешествиям.</p>
-                <div class="hero__actions">
-                    <a href="#adventures" class="btn btn--primary">Выбрать маршрут</a>
-                    <a href="#about" class="btn btn--outline-light">О нас</a>
+        <div class="hero__content">
+            <!-- Logo — top center -->
+            <img src="img/logo.png" alt="далеко" class="hero__logo">
+            <!-- Capetonians logo — top left, above title -->
+            <div class="hero__title-wrapper">
+                <img src="img/capetonians_logo.png" alt="Travel-проект Capetonians" class="hero__capetonians-logo">
+                <!-- Main headline — centered -->
+                <h1 class="hero__title">УНИКАЛЬНЫЕ ПУТЕШЕСТВИЯ<br>ПО ЮАР И ЮГУ АФРИКИ</h1>
+            </div>
+            <!-- Description — centered -->
+            <p class="hero__subtitle">Показываем маршруты в Африке, рождённые из пройденных километров, внимания к мелочам и большой любви к приключениям.</p>
+            <!-- CTA buttons — centered -->
+            <div class="hero__actions">
+                <a href="#adventures" class="btn btn--hero-primary">Выбрать путешествие</a>
+                <a href="#about" class="hero__link">Подробнее о нас</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero V2 -->
+    <section class="hero-v2">
+        <div class="hero-v2__inner">
+            <div class="hero-v2__left">
+                <a href="#about" class="hero-v2__about-link">Подробнее о нас</a>
+                <div class="hero-v2__text-block">
+                    <img src="img/capetonians_logo.png" alt="Travel-проект Capetonians" class="hero-v2__capetonians">
+                    <h2 class="hero-v2__title">УНИКАЛЬНЫЕ ПУТЕШЕСТВИЯ<br>ПО ЮАР И ЮГУ АФРИКИ</h2>
+                    <p class="hero-v2__subtitle">Показываем маршруты в Африке, рождённые из пройденных километров, внимания к мелочам и большой любви к приключениям.</p>
+                    <div class="hero-v2__actions">
+                        <a href="#adventures" class="hero-v2__btn hero-v2__btn--filled">Выбрать путешествие</a>
+                        <a href="#about" class="hero-v2__btn hero-v2__btn--outline">Подробнее о нас</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-v2__photos">
+                <div class="hero-v2__photo hero-v2__photo--1">
+                    <img src="img/logo.png" alt="далеко" class="hero-v2__logo-overlay">
+                    <img src="img/second section/2025 nov dec (56) 1.png" alt="Мыс Доброй Надежды">
+                </div>
+                <div class="hero-v2__photo hero-v2__photo--2">
+                    <img src="img/second section/2025 nov dec (38) 1.png" alt="Путешественник">
+                </div>
+                <div class="hero-v2__photo hero-v2__photo--3">
+                    <img src="img/second section/2025 nov dec (21) 1.png" alt="Кейптаун">
                 </div>
             </div>
         </div>
-        <div class="hero__scroll">
-            <svg width="16" height="24" viewBox="0 0 16 24" fill="none"><path d="M8 0v20m0 0l-6-6m6 6l6-6" stroke="currentColor" stroke-width="1.5"/></svg>
+    </section>
+
+    <!-- Hero V3 (hidden for now)
+    <section class="hero-v3">
+        <div class="hero-v3__inner">
+            <div class="hero-v3__hero-image">
+                <img src="img/third section/hero-back.png" alt="Скалы" class="hero-v3__bg">
+                <div class="hero-v3__overlay"></div>
+                <div class="hero-v3__top">
+                    <a href="#about" class="hero-v3__link-left">Подробнее о нас</a>
+                    <img src="img/third section/travel-project capetonians.png" alt="Travel-проект Capetonians" class="hero-v3__capetonians">
+                </div>
+                <div class="hero-v3__content">
+                    <img src="img/third section/daleko text.png" alt="далеко" class="hero-v3__daleko-logo">
+                    <h2 class="hero-v3__title">УНИКАЛЬНЫЕ ПУТЕШЕСТВИЯ ПО ЮАР И ЮГУ АФРИКИ</h2>
+                    <p class="hero-v3__subtitle">Показываем маршруты в Африке, рождённые из пройденных километров, внимания к мелочам и большой любви к приключениям.</p>
+                    <a href="#adventures" class="hero-v3__btn">Выбрать путешествие</a>
+                </div>
+            </div>
+            <div class="hero-v3__slogan">
+                <h3 class="hero-v3__slogan-text">
+                    НАСТОЯЩИЕ ОТКРЫТИЯ НАЧИНАЮТСЯ<br>
+                    <img src="img/third section/daleko text.png" alt="далеко" class="hero-v3__slogan-daleko"> ОТ ПРИВЫЧНОГО
+                </h3>
+            </div>
+            <div class="hero-v3__about">
+                <div class="hero-v3__about-photo">
+                    <img src="img/third section/friends.png" alt="Друзья">
+                </div>
+                <p class="hero-v3__about-text">
+                    <strong>Daleko</strong> родился как продолжение проекта Кейптонианов&nbsp;&mdash; самого активного русскоязычного сообщества Кейптауна.
+                </p>
+            </div>
         </div>
     </section>
+    -->
 
     <!-- Mission / About intro -->
     <section class="mission" id="mission">

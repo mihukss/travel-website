@@ -112,18 +112,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // --- Mobile video optimization ---
-    // Pause hero video when not visible to save battery
-    const heroVideo = document.querySelector('.hero__video');
-    if (heroVideo) {
-        const videoObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    heroVideo.play().catch(() => {});
-                } else {
-                    heroVideo.pause();
-                }
-            });
-        }, { threshold: 0.1 });
-        videoObserver.observe(heroVideo);
-    }
+    // Removed - now using static image instead of video
 });

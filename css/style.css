@@ -59,6 +59,7 @@
 }
 
 html {
+    font-size: 115%;
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -1296,6 +1297,12 @@ h1, h2, h3 {
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
 }
 
+.camp-card--link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
 .camp-card__icon {
     display: flex;
     align-items: center;
@@ -1308,6 +1315,12 @@ h1, h2, h3 {
     margin-bottom: var(--space-md);
 }
 
+.camp-card__icon-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 .camp-card__title {
     font-size: 1.25rem;
     margin-bottom: var(--space-xs);
@@ -1317,6 +1330,22 @@ h1, h2, h3 {
     font-size: 0.9375rem;
     color: var(--color-text-secondary);
     line-height: 1.65;
+}
+
+.camp-card__partner {
+    display: inline-block;
+    margin-top: var(--space-sm);
+}
+
+.camp-card__partner-logo {
+    height: 2rem;
+    width: auto;
+    opacity: 0.7;
+    transition: opacity var(--transition);
+}
+
+.camp-card__partner-logo:hover {
+    opacity: 1;
 }
 
 /* ==========================================================================
@@ -1372,12 +1401,11 @@ h1, h2, h3 {
     overflow: hidden;
 }
 
-.about__image-placeholder {
+.about__img {
     width: 100%;
-    padding-top: 120%;
-    background:
-        linear-gradient(160deg, #096589 0%, #0B7DA8 40%, #D4A853 100%);
+    height: auto;
     border-radius: var(--radius-lg);
+    object-fit: cover;
 }
 
 .about__text p {
@@ -1844,8 +1872,8 @@ h1, h2, h3 {
         overflow: hidden;
     }
 
-    .about__image-placeholder {
-        padding-top: 65%;
+    .about__img {
+        max-height: 350px;
     }
 
     .about__text p {
